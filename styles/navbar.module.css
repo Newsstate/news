@@ -1,0 +1,38 @@
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Makes sure the site name and links are spaced out */
+  align-items: center;
+ overflow:auto;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.navLink:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+.siteName {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-right: auto; /* Moves the site name to the left */
+}
+
+.siteName:hover {
+  color: #f1f1f1; /* Optional hover effect */
+}

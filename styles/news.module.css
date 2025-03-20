@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer; /* Shows pointer cursor */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cardLink:focus,
+.cardLink:visited,
+.cardLink:hover,
+.cardLink:active {
+  text-decoration: none; /* Ensure no underline appears */
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.noImage {
+  width: 100%;
+  height: 200px;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #555;
+  border-radius: 8px;
+}
+
+.content {
+  padding: 15px;
+  text-align: start; /* ✅ Aligns all text to the start */
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: start; /* ✅ Aligns title to the start */
+}
+
+.excerpt {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: start; /* ✅ Aligns excerpt to the start */
+}
+
+.readMore {
+  display: inline-block;
+  font-size: 14px;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+  text-align: start; /* ✅ Aligns button to the start */
+}
+
+.readMore:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+.cardLink {
+  text-decoration: none;  /* Removes underline */
+  color: inherit;         /* Inherit text color */
+  display: block;         /* Makes the entire card clickable */
+}
+
+.meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
